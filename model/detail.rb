@@ -35,15 +35,13 @@ class Detail
 					end
 				}
 		} 
-
 		return people
-
 	end
 
 	def middle_initial?(arr)
 		if arr.length == 5
 			a_person = ["l_name","f_name","gender","fav_color", "birth_date"]
-		else
+		elsif arr.length == 6
 			a_person = ["l_name","f_name","mid_initial","gender","fav_color", "birth_date"]
 		end
 		a_person.zip(arr).to_h
@@ -60,5 +58,3 @@ def fix_gender(arr)
 	end
 end
 		
-
-# binding.pry
